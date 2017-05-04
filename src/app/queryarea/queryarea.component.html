@@ -1,0 +1,33 @@
+<h3>Find Me A</h3>
+<div  class="searchoptions">
+<div [(ngModel)]="model" ngbRadioGroup name="radioBasic">
+  <label class="btn btn-primary">
+    <input type="radio" value="rooms"> Room
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" value="books"> Book
+  </label>
+  <label class="btn btn-primary">
+    <input type="radio" value="colleges"> College
+  </label>
+</div>
+<hr>
+</div>
+
+<div *ngIf = "model == 'rooms' then roomsform"></div>
+<div *ngIf = "model == 'books' then booksform"></div>
+<div *ngIf = "model == 'colleges' then collegeform"></div>
+
+
+
+<ng-template #roomsform>
+  <p>Rooms Menu Selected</p>
+</ng-template>
+
+<ng-template #booksform>
+  <p>Books Menu Selected</p>
+</ng-template>
+
+<ng-template #collegeform>
+  <p>Colleges Menu Selected</p>
+</ng-template>
