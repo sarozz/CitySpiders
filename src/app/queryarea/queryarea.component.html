@@ -21,13 +21,84 @@
 
 
 <ng-template #roomsform>
-  <p>Rooms Menu Selected</p>
+  <form class="form-inline">
+
+  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="City/Location" style="border-radius: 0px;">
+
+  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username" style="border-radius: 0px;">
+  </div>
+
+  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+    <select class="custom-select" style="border-radius: 0px;">
+      <<option value="0" selected>Number of rooms</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+
+  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+    <select class="custom-select" style="border-radius: 0px;">
+      <<option value="0" selected>Room Size</option>
+      <option value="1">Small</option>
+      <option value="2">Medium</option>
+      <option value="3">Large</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary" style="border-radius: 0px;"><i class="fa fa-search"></i>&nbsp;Search</button>
+  </form>
 </ng-template>
 
 <ng-template #booksform>
-  <p>Books Menu Selected</p>
+  <form class="form-inline">
+
+  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="Name Of Book" style="border-radius: 0px;">
+
+  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Book Location" style="border-radius: 0px;">
+  </div>
+
+  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+    <select class="custom-select" style="border-radius: 0px;">
+      <<option value="0" selected>Book Condition</option>
+      <option value="1">New</option>
+      <option value="2">Old</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary" style="border-radius: 0px;"><i class="fa fa-search"></i>&nbsp;Search</button>
+  </form>
 </ng-template>
 
 <ng-template #collegeform>
-  <p>Colleges Menu Selected</p>
+  <form class="form-inline">
+
+  <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormInput" placeholder="College/Uni Location" style="border-radius: 0px;">
+
+  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+    <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Book Location" style="border-radius: 0px;">
+  </div>
+
+  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+    <select class="custom-select" style="border-radius: 0px;">
+      <option value="0" selected>Faculty</option>
+      <option value="1">Engineering</option>
+      <option value="2">CSIT</option>
+      <option value="2">BBS</option>
+    </select>
+  </div>
+
+  <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+    <select class="custom-select" style="border-radius: 0px;">
+      <option value="0" selected>Level</option>
+      <option value="1">Bachelors</option>
+      <option value="2">Masters</option>
+      <option value="2">Ph.D</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary" style="border-radius: 0px;"><i class="fa fa-search"></i>&nbsp;Search</button>
+  </form>
 </ng-template>
